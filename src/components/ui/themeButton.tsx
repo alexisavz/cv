@@ -8,7 +8,7 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 
 export function ThemeButton() {
-  const { theme, setTheme, mounted } = useTheme();
+  const { theme, setTheme } = useTheme();
   const [isDarkTheme, setIsDarkTheme] = useState(theme === "dark");
 
   useEffect(() => {
