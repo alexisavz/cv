@@ -1,15 +1,20 @@
 "use client";
 
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
 
 export function ThemeButton() {
-  const { setTheme } = useTheme();
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const { theme, setTheme, mounted } = useTheme();
+  const [isDarkTheme, setIsDarkTheme] = useState(theme === "dark");
+
+  useEffect(() => {
+    // Update the state when the theme changes outside the component
+    setIsDarkTheme(theme === "dark");
+  }, [theme]);
 
   const toggleTheme = () => {
     setTheme(isDarkTheme ? "light" : "dark");
