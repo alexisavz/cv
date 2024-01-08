@@ -9,31 +9,28 @@ import { Button } from "@/components/ui/button";
 
 export function ThemeButton() {
   const { setTheme } = useTheme();
-  const [color, setColor] = useState("light");
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  const toggleTheme = () => {
+    setTheme(isDarkTheme ? "light" : "dark");
+    setIsDarkTheme(!isDarkTheme);
+  };
 
   return (
     <div>
-      <div>
-        {color == "dark" ? (
-          <Button variant="outline" size="icon">
-            <Sun
-              className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
-              onClick={() => setTheme(color == "light" ? "dark" : "light")}
-            />
-            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            <span className="sr-only">Toggle theme</span>
-          </Button>
-        ) : (
-          <Button variant="outline" size="icon">
-            <Sun
-              className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
-              onClick={() => setTheme(color =="dark" ? "light" : "dark")}
-            />
-            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" onClick={() => setTheme("light")}/>
-            <span className="sr-only">Toggle theme</span>
-          </Button>
-        )}
-      </div>
+      <Button variant="outline" size="icon" onClick={toggleTheme}>
+        <Sun
+          className={`h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all ${
+            isDarkTheme ? "dark:-rotate-90 dark:scale-0" : ""
+          }`}
+        />
+        <Moon
+          className={`absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all ${
+            isDarkTheme ? "dark:rotate-0 dark:scale-100" : ""
+          }`}
+        />
+        <span className="sr-only">Toggle theme</span>
+      </Button>
     </div>
   );
 }
