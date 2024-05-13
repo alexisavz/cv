@@ -18,6 +18,7 @@ import Minimal from "../images/logos/minimal.svg";
 import { GitHubIcon } from "@/components/icons/GitHubIcon";
 import { LinkedInIcon } from "@/components/icons/LinkedInIcon";
 import { XIcon } from "@/components/icons/XIcon";
+import { link } from "fs";
 
 export const RESUME_DATA = {
   name: "Alexis Zugasti",
@@ -55,7 +56,7 @@ export const RESUME_DATA = {
   work: [
     {
       company: "STX Next",
-      link: "https://clevertech.biz",
+      link: "https://www.stxnext.com/",
       badges: ["Remote"],
       title: "QA Engineer",
       logo: ClevertechLogo,
@@ -66,6 +67,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Freelance",
+      link:"https://www.divelement.io/",
       badges: ["Remote"],
       title: "QA Engineer",
       logo: ClevertechLogo,
@@ -77,6 +79,7 @@ export const RESUME_DATA = {
     {
       company: "Freelance",
       badges: ["Remote"],
+      link:"https://www.divelement.io/",
       title: "Web Developer",
       logo: ParabolLogo,
       start: "2021",
