@@ -25,9 +25,9 @@ export const RESUME_DATA = {
   location: "Monterrey, CST",
   locationLink: "https://www.google.com/maps/place/Monterrey",
   about:
-    "Web Developer and QA Enginner focused on building innovative products with extra attention to details",
+    "QA Enginner and Web Developer focused on building innovative products with extra attention to details",
   summary:
-    "As a seasoned Front End Developer, I've spent three dynamic years shaping web experiences globally. Proficient in TypeScript, React, Node.js, and GraphQL, I navigate the full development lifecycle from prototyping to automated testing. Leading development teams fuels my passion for creating optimal work environments. With a background in QA engineering, I ensure not just visual appeal but also rigorous testing. My commitment to excellence and client satisfaction has led to successful products, marking my journey from local structures to a global digital landscape.",
+    "As a seasoned QA Engineer with a passion for exploring new technologies, I bring a diverse skill set encompassing manual testing, automated testing, and performance testing to every project I undertake. With a natural curiosity and eagerness to innovate, I constantly seek ways to enhance projects and solve real-world problems. My background as a frontend developer adds depth to my understanding of application development, allowing me to approach testing with a holistic perspective. I thrive on collaborating with teams to implement cutting-edge solutions and contribute to the success of impactful projects.",
   avatarUrl: "https://avatars.githubusercontent.com/u/39324969?v=4",
   contact: {
     email: "alexiszugasti@gmail.com",
@@ -54,19 +54,18 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Divelement Web Services",
-      link: "https://divelement.io",
+      company: "STX Next",
+      link: "https://clevertech.biz",
       badges: ["Remote"],
-      title: "Web Developer",
-      logo: ParabolLogo,
-      start: "2021",
+      title: "QA Engineer",
+      logo: ClevertechLogo,
+      start: "2024",
       end: "Current",
       description:
-        "Led Dev Team, Implemented new features, provided support for existing projects, developed new websites, experience migrating projects to new technologies. Technologies: React, TypeScript, GraphQL",
+        "Performed automated, manual, and performance testing. As well as migrating tests from deprecated tools into more modern frameworks. Worked independently on large-scale projects while collaborating with cross-functional teams.",
     },
     {
-      company: "Divelement Web Services",
-      link: "https://clevertech.biz",
+      company: "Freelance",
       badges: ["Remote"],
       title: "QA Engineer",
       logo: ClevertechLogo,
@@ -74,6 +73,16 @@ export const RESUME_DATA = {
       end: "Current",
       description:
         "Implemented automated testing for a different range of web applications. Led the process of conducting manual testing on several websites and applications. Spearheaded the implementation of Quality Assurance processes.",
+    },
+    {
+      company: "Freelance",
+      badges: ["Remote"],
+      title: "Web Developer",
+      logo: ParabolLogo,
+      start: "2021",
+      end: "Current",
+      description:
+        "Implemented new features, provided support for existing projects, developed new websites, experience migrating projects to new technologies. Technologies: React, TypeScript, GraphQL",
     },
     {
       company: "CVA ITESM",
