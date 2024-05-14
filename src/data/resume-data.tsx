@@ -26,7 +26,7 @@ export const RESUME_DATA = {
   location: "Monterrey, CST",
   locationLink: "https://www.google.com/maps/place/Monterrey",
   about:
-    "QA Enginner and Web Developer focused on building innovative products with extra attention to details",
+    "QA Engineer and Web Developer focused on building innovative products with extra attention to details",
   summary:
     "As a seasoned QA Engineer with a passion for exploring new technologies, I bring a diverse skill set encompassing manual testing, automated testing, and performance testing to every project I undertake. With a natural curiosity and eagerness to innovate, I constantly seek ways to enhance projects and solve real-world problems. My background as a frontend developer adds depth to my understanding of application development, allowing me to approach testing with a holistic perspective. I thrive on collaborating with teams to implement cutting-edge solutions and contribute to the success of impactful projects.",
   avatarUrl: "https://avatars.githubusercontent.com/u/39324969?v=4",
